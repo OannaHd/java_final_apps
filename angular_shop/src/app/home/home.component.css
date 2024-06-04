@@ -1,0 +1,69 @@
+.drawer-container {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://dekorillo.pl/wp-content/uploads/2020/11/tapeta-classic-flowers-peony-wzor-e1693252003139.jpg');
+  background-repeat: repeat;
+}
+
+.drawer-sidenav-content {
+  height: 100%;
+  color: #b89e9e;
+}
+
+.drawer-sidenav {
+  padding: 20px;
+  color: #b89e9e;
+}
+
+.card-menu-button {
+  width: 500px;
+  margin-bottom: 20px;
+  color: #b89e9e;
+}
+
+.div-logo {
+  width: 100%;
+  display: flex;
+}
+.img-logo{
+  height: 400px;
+  margin: auto;
+}
+.img-banner{
+  width: 22%;
+  margin: 20px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-about-us {
+  margin: 22px;
+
+}
+
+.title-about-us {
+  margin: 22px;
+}
+
+.text-about-us {
+  font-family: "Gabriola", serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.text-margin-top {
+  margin-top: 22px;
+}
+
+.div-text {
+  display: flex;
+}
+
+.img-section {
+  width: 350px;
+  margin-left: 22px;
+  border-radius: 22px;
+
+
+}

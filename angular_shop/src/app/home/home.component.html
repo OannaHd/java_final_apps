@@ -1,0 +1,118 @@
+<mat-drawer-container class="drawer-container" autosize>
+  <mat-drawer #drawer class="drawer-sidenav" mode="side">
+
+    <div class="div-logo">
+      <img class="img-logo"
+           [src]="appConfig.getAppLogo()"/>
+    </div>
+    <mat-card class="card-menu-button">
+      <mat-card-content>
+        <p>{{ appConfig.getAppOwner() }}</p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-menu-button" *ngIf="isUserAdmin()" (click)="onDashboard()">
+      <mat-card-content>
+        <p>Dashboard</p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-menu-button" (click)="onLogOut()">
+      <mat-card-content>
+        <p>Logout</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-drawer>
+
+  <div class="drawer-sidenav-content">
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{ appConfig.getAppName() }}</span>
+      <span class="example-spacer"></span>
+      <app-cart-button></app-cart-button>
+    </mat-toolbar>
+
+    <img class="img-banner"
+         src="https://aiph.org/wp-content/uploads/2022/10/AdobeStock_194370518-scaled.jpeg"/>
+    <img class="img-banner"
+         src="https://images.squarespace-cdn.com/content/v1/5ad0f6180dbda33931a6c402/1583403840980-N9P9PPTYDCYH5XW8M0W4/Brighton-Florist-Webb-and-Farrer-Wedding-Flowers2+%282%29.jpg"/>
+    <img class="img-banner"
+         src="https://i.pinimg.com/564x/9b/d1/2a/9bd12ae3aa00c82f95ff637d30b649d9.jpg"/>
+    <img class="img-banner"
+         src="https://thymestudio.ca/cdn/shop/files/65BQ-COLOURFULA.jpg?v=1688761224"/>
+
+    <mat-card class="card-about-us">
+      <mat-card-title class="title-about-us text-about-us" >  {{ appConfig.getAppName() }} - Despre noi </mat-card-title>
+      <mat-card-content>
+
+        <div class="div-text">
+          <p class="text-about-us">
+            <br><br>
+            Florăria noastra înseamnă flori și emoții.
+
+            <br><br>
+
+            Creăm cu atenție și pe gustul tău buchete ce îți pot însenina ziua și vor lumina încăperea unde petreci cel mai mult timp.
+            Starea de bine pe care ți-o oferă acestea te ajută să te relaxezi și să te bucuri de momentele zilnice cu mai multă energie.
+            Chiar de aceea, îți recomandăm să alegi pentru tine și pentru cei dragi aranjamente florale cu livrare gratuita in orasul tau.
+            Poti sa descoperi noi și noi opțiuni de înfrumusețare a casei tale, cu ajutorul florilor: proaspete, uscate sau criogenate.
+
+            <br><br>
+
+            Alege minunatele cutii cu flori, cadouri elegante si sofisticate .  Ideale pentru a surprinde o persoana draga,
+            aceste cutii cu flori sunt create cu multa pasiune de echipa noastra de designeri floristi.
+            <br><br>
+            Când suntem înconjurați de frumos, simțim că ziua noastră devine aproape automat mai bună, iar  aranjamente florale sunt frumosul care poate că-ți lipsește.
+            O cameră plină de viață și culoare are un impact mare asupra fericirii noastre.
+
+            <br><br>
+
+            Alege sa daruiesti cu  Bloom Agency o florarie online de lux din orasul tau .
+            <br><br>
+
+            Profita de beneficiile pe care ti le punem la dispozitie! Comanda produsele favorite si iti oferim servicii profesionale de livrare flori prin curieri proprii
+            in cel mai scurt timp posibil 2-4 ore.
+          </p>
+          <img class="img-section"
+               src="https://images.squarespace-cdn.com/content/v1/57451c424c2f85ae9b18f48d/ddcb7ab1-22ab-49dd-8da9-9b3b054393a5/Claudia+Lapena+-+4A4B169D-B766-409B-BD76-AAC2590167F7.jpeg"/>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card-about-us">
+      <mat-card-title class="title-about-us text-about-us">  Ingrijirea florilor </mat-card-title>
+      <mat-card-content>
+        <div class="div-text">
+          <img class="img-section" style="margin-left: 0px !important; margin-right: 16px"
+               src="https://roflora.ro/media/shopshark/blog/30_de_sfaturi_despre_ingrijirea_florilor_taiate.jpg">
+
+          <p class="text-about-us">
+
+            <br><br>
+            Cand primesti un aranjament floral, este important sa verifici daca buretele are destula apa.
+            Florile nu se scot din burete si se ating delicat.
+            Daca totusi scoateti o floare din burete, infigeti la loc floarea dupa ce ii taiati codita si introduceti-o intr-o parte a buretelui.
+            Udati buretele cu aproximativ 50-100 ml apa plata o data la 2 zile. In functie de temperatura interioara unde pastrati florile si de
+            cat de mare este aranjamentul floral
+            <br><br>
+            Evitati soarele direct catre flori si curentul excesiv. Aerisiti camera unde se afle aranjamentul o data pe zi.
+
+            Optează pentru o stare pozitivă de lungă durată . Nu ezita să alegi unul dintre aranjamentele florale create de
+            specialiștii Bloom Agency.
+
+
+
+            <br><br>
+            Floraria online din orasul tau cu livrare gratuita.
+
+          </p>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+
+    <app-list-products [isAdmin]="false"></app-list-products>
+  </div>
+
+</mat-drawer-container>
+
