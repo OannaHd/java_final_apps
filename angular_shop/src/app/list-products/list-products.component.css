@@ -21,21 +21,26 @@
 }
 .btn-buy{
   margin-left: auto;
+  background-color: #b89e9e;
+
 }
 .div-admin-controls{
   display: grid;
 }
 .p-title{
-  font-size: 20px;
+  font-size: 30px;
   color: darkolivegreen;
+  font-family: "Gabriola", serif;
   font-weight: bold;
   margin-top: 16px;
 
 }
 .p-description{
-  font-size: 14px;
-  font-style: italic;
+  font-size: 20px;
+  font-family: "Gabriola", serif;
+  font-style: normal;
 }
 .p-price{
   font-weight: bold;
+
 }

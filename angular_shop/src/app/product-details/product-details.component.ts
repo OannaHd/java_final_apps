@@ -91,6 +91,7 @@ export class ProductDetailsComponent implements OnInit {
       alert("Utilizatorul nu este logat, trebuie sa te loghezi inainte sa adaugi produse in cos");
       this.router.navigate(["/", "auth"]);
     } else {
+      alert ("Produsul tau a fost adaugat in cos");
       this.orderService.addToCart(this.productData);
     }
   }
